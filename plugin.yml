@@ -1,21 +1,19 @@
-name: PiggyShopUI
+name: ShopUI
 main: PiggyShopUI\Main
 version: 1.0.0
-api: 3.0.0
+api: [3.0.0, 4.0.0]
 load: POSTWORLD
 author: DaPigGuy
+authors: JackCasto
 permissions:
-  piggyshopui:
+  shopui:
     default: false
-    description: "Use everything in PiggyShopUI"
+    description: "Use Everything In ShopUI"
     children:
-      piggyshopui.command:
+      shopui.command:
         default: op
-        description: "Use all PiggyShopUI commands"
+        description: "Use All ShopUI Commands"
         children:
-          piggyshopui.command.buy:
+          shopui.command.shopui:
             default: true
-            description: "Use /buy"
-          piggyshopui.command.sell:
-            default: true
-            description: "Use /sell"
+            description: "Use /shop"
